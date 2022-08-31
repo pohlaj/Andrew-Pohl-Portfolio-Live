@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,500;1,600&family=Roboto+Mono:wght@300&family=Roboto:wght@400;500&display=swap');
+
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+/* Variables */ 
+
+:root {
+  --font-family1: 'Roboto Mono', monospace;
+  --font-family2: 'Roboto', sans-serif;
+  --font-family3: 'Public Sans', sans-serif;
+  --normal-font1: 100;
+  --bold-font: 400;
+  --bolder-font1: 700;
+  --bg-color1: rgb(255, 255, 255);
+  --primary-color: #1980bc;
+  --secondary-color: rgb(0, 47, 117);
+  --third-color: #000000;
+  --primary-shadow: #3f3f3f;
+  --secondary-shadow: #4c4c4c;
+  --transition: 0.3s;
+  --bottom-margin: 2rem;
+}
+
+
+.contact {
+    margin-top: 3rem;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: var(--font-family3);
+  }
+  
+  .contact .text-center {
+    margin-bottom: 3rem
+  }
+
+  .contact-form-container {
+    max-width: 50vw;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border: 60%;
+  }
+  
+  .contact-form-container label{
+    color: var(--primary-color);
+  }
+  
+  .contact-form-container textarea{
+    min-height: 6.25rem;
+    font-size: 14px;
+  }
+  
+  .contact-form-container .input-feild{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.875rem;
+    
+  }
+  
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-shadow);
+  }
+
+  .buttoncontainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 33px;
+    font-family: var(--font-family2);
+    font-size: 18px;
+    font-weight: 400;
+    transition: var(--transition);
+    width: 150px;
+  }
+  
+  .btn {
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-shadow);
+  }
+
+  .form-control::after{
+    border-color: var(--primary-color);
+  }
+
+  @media screen and (max-width: 420px) {
+    .contact-form-container {
+      max-width: 80vw;
+    }
+
+  }

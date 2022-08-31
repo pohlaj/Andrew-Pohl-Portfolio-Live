@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,500;1,600&family=Roboto+Mono:wght@300;400&family=Roboto:wght@400;500&display=swap');
+
+@import '~mdb-ui-kit/css/mdb.min.css';
+
+/* Variables */ 
+
+:root {
+  --font-family1: 'Roboto Mono', monospace;
+  --font-family2: 'Roboto', sans-serif;
+  --font-family3: 'Public Sans', sans-serif;
+  --normal-font1: 100;
+  --bold-font: 400;
+  --bolder-font1: 700;
+  --bg-color1: rgb(255, 255, 255);
+  --primary-color: #45bbfe;
+  --secondary-color: rgb(0, 47, 117);
+  --third-color: #000000;
+  --primary-shadow: #3f3f3f;
+  --secondary-shadow: #4c4c4c;
+  --transition: 0.3s;
+  --bottom-margin: 2rem;
+}
+
+
+.photohero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photobio{
+    background-color: rgba(255, 255, 255, 0.8);
+    width:50%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 33px;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.photobio-photo{
+    display: flex;
+    justify-content: center;
+}
+
+.photobio img{
+    border-radius: 11px;
+    width: 272px;
+    height: auto;
+    margin: 25px;
+}
+
+.photobio h1{
+    margin-bottom: 0px;
+    font-family: var(--font-family3);
+    font-size: 60px;
+}
+
+.photobio p{
+    color:black;
+    margin: 25px;
+    font-weight: 400;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    background-color: white;
+}
+
+.portfolio-title{
+    font-size: 60px;
+    margin-top: 3rem;
+}
+
+.gallery{
+    
+    width: 90%;
+    justify-content: center;
+    column-count: 4;
+    column-gap: 10px;
+}
+
+.gallery a {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+.gallery a img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.business{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.businessbio{
+    background-color: rgba(255, 255, 255, 0.8);
+    width:75%;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 33px;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.business h1{
+    font-size: 60px;
+}
+
+@media screen and (max-width: 420px) {
+    .photobio{
+        background-color: rgba(255, 255, 255, 0.8);
+        width:80%;
+    }
+
+    .photobio img{
+        border-radius: 11px;
+        width: 180px;
+        height: auto;
+        margin: 25px;
+    }
+    
+    .photobio h1{
+        margin-bottom: 0px;
+        font-family: var(--font-family3);
+        font-size: 50px;
+    }
+
+    .photobio p{
+        color:black;
+        margin: 10px;
+        font-weight: 400;
+    }
+
+    .gallery{
+    
+        width: 95%;
+        justify-content: center;
+        column-count: 2;
+        column-gap: 5px;
+    }
+
+    .business h1{
+        font-size: 45px;
+    }
+
+    .business .button {
+        font-size: 15px;
+      }
+}
