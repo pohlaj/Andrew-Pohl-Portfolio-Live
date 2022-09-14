@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="assets/css/photostyles.css" />
 <!-- Font awesome -->
 <script src="https://kit.fontawesome.com/024f552cc8.js" crossorigin="anonymous"></script>
-<!--lightGallery-->
+<!--lightGallery CSS-->
 <link type="text/css" rel="stylesheet" href="node_modules\lightgallery\css\lightgallery.css" />
 
 <!-- Favicons -->
@@ -102,25 +102,25 @@
           <a href="assets/images/IMG_3978.jpg" class="gallery-item">
             <img  src="assets/images/IMG_3978.jpg" alt="Thatcher" />
           </a>         
-          <a href="assets/images/Gallery Photos/Portraits/20210809-IMG_6507.jpg" class="gallery-item">
+          <a href="assets/images/Thumbnails/Portraits/20210809-IMG_6507.jpg" class="gallery-item">
             <img class="img-responsive" src="assets/images/Gallery Photos/Portraits/20210809-IMG_6507.jpg" alt="Bella in Blue"/>
           </a>          
-          <a href="assets/images/Gallery Photos/Weddings & Events/20210822-IMG_6959.jpg" class="gallery-item">
+          <a href="assets/images/Thumbnails/Weddings & Events/20210822-IMG_6959.jpg" class="gallery-item">
             <img class="img-responsive" src="assets/images/Gallery Photos/Weddings & Events/20210822-IMG_6959.jpg" alt="Wedding Photo"/>
           </a>
-          <a href="assets/images/Gallery Photos/Portraits/Xavier streetart-4.jpg" class="gallery-item">
+          <a href="assets/images/Thumbnails/Portraits/Xavier streetart-4.jpg" class="gallery-item">
             <img class="img-responsive" src="assets/images/Gallery Photos/Portraits/Xavier streetart-4.jpg" alt="Xavier"/>
           </a>
-          <a href="assets/images/Gallery Photos/Portraits/20210704-IMG_6086.jpg" class="gallery-item">
+          <a href="assets/images/Thumbnails/Portraits/20210704-IMG_6086.jpg" class="gallery-item">
             <img class="img-responsive" src="assets/images/Gallery Photos/Portraits/20210704-IMG_6086.jpg" alt="Anna"/>
           </a>
-          <a href="assets/images/Gallery Photos/Landscapes/IMG_4546.jpg" class="gallery-item">
+          <a href="assets/images/Thumbnails/Landscapes/IMG_4546.jpg" class="gallery-item">
             <img class="img-responsive" src="assets/images/Gallery Photos/Landscapes/IMG_4546.jpg" alt="Thatcher">
           </a>
-          <a href="assets/images/Gallery Photos/Portraits/IMG_0628.jpg" class="gallery-item">
+          <a href="assets/images/Thumbnails/Portraits/IMG_0628.jpg" class="gallery-item">
             <img class="img-responsive" src="assets/images/Gallery Photos/Portraits/IMG_0628.jpg" alt="Ella">
           </a>
-          <a href="assets/images/Gallery Photos/Travel Photography/IMG_1810.jpg" class="gallery-item">
+          <a href="assets/images/Thumbnails/Travel Photography/IMG_1810.jpg" class="gallery-item">
             <img class="img-responsive" src="assets/images/Gallery Photos/Travel Photography/IMG_1810.jpg" alt="Gloucester, MA">
           </a>
           <a href="assets/images/IMG_4513.jpg" class="gallery-item">
@@ -199,10 +199,13 @@
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
     <!--lightGallery-->
     <script src="node_modules/lightgallery/lightgallery.umd.js"></script>
-    <!--Rellax-->
-    <script src="node_modules/rellax/rellax.min.js"></script>
-    <script>
-      lightGallery(document.getElementById('lightgallery'));
-    </script>
+    <script type="text/javascript">
+      lightGallery(document.getElementById('lightgallery'), {
+          plugins: [lgZoom, lgThumbnail],
+          licenseKey: 'your_license_key',
+          speed: 500,
+          // ... other settings
+      });
+  </script>
  </body>
 </html>

@@ -1,5 +1,4 @@
-
-
+import lightGallery from 'lightgallery';
 
 
 // scroll to top functionality
@@ -40,3 +39,7 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500
+  
+});
