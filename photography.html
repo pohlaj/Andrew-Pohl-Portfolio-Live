@@ -15,7 +15,7 @@
 <!-- Font awesome -->
 <script src="https://kit.fontawesome.com/024f552cc8.js" crossorigin="anonymous"></script>
 <!--lightGallery CSS-->
-<link type="text/css" rel="stylesheet" href="node_modules\lightgallery\css\lightgallery.css" />
+<link type="text/css" rel="stylesheet" href="node_modules/lightgallery/css/lightgallery-bundle.css" />
 
 <!-- Favicons -->
 <link
@@ -198,13 +198,11 @@
      <!--MDB-->
      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
     <!--lightGallery-->
-    <script src="node_modules/lightgallery/lightgallery.umd.js"></script>
+    <script src="node_modules/lightgallery/lightgallery.min.js"></script>
+
     <script type="text/javascript">
       lightGallery(document.getElementById('lightgallery'), {
-          plugins: [lgZoom, lgThumbnail],
-          licenseKey: 'your_license_key',
-          speed: 500,
-          // ... other settings
+          speed: 500
       });
   </script>
  </body>
