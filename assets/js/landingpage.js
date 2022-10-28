@@ -1,3 +1,6 @@
+
+
+
 // Select nav links
 const navLink = document.querySelectorAll(".nav-link");
 
@@ -7,3 +10,4 @@ navLink.forEach((link) =>
     ul.classList.remove("show");
   })
 );
+
