@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@1,500;1,600&family=Roboto+Mono:wght@300;400&family=Roboto:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
 @import '~mdb-ui-kit/css/mdb.min.css';
 
 /* Variables */ 
 
 :root {
-  --font-family1: 'Roboto Mono', monospace;
-  --font-family2: 'Roboto', sans-serif;
-  --font-family3: 'Public Sans', sans-serif;
+  --font-family1: 'IBM Plex Mono', monospace;
+  --font-family2: 'IBM Plex Sans', sans-serif;
+  --font-family3: 'IBM Plex Sans', sans-serif;
   --normal-font1: 100;
   --bold-font: 400;
   --bolder-font1: 700;
@@ -64,6 +63,7 @@ body::-webkit-scrollbar-thumb {
 
 h1 {
   font-family: var(--font-family3);
+  font-style: italic;
   color: black;
 }
 
@@ -197,11 +197,9 @@ span.navbar-brand {
 }
 
 .about .container{
-  border: 2.5px;
-  border-style: solid;
-  border-color: var(--primary-shadow);
-  border-radius: 33px;
 
+  border-radius: 33px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about-header {
@@ -239,7 +237,9 @@ span.navbar-brand {
 }
 
 .skill-header {
+  margin-top: var(--bottom-margin);
   margin-bottom: var(--bottom-margin);
+  font-size: 35px;
 }
 
 .skills-wrapper img {
@@ -249,7 +249,7 @@ span.navbar-brand {
 .icon-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 20px;
   margin: 10px;
 }
@@ -314,7 +314,7 @@ span.navbar-brand {
   align-content: center;
   justify-content: flex-end;
   flex-wrap: wrap;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project2 {
@@ -329,7 +329,7 @@ span.navbar-brand {
   align-content: center;
   justify-content: flex-end;
   flex-wrap: wrap;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project3 {
@@ -344,7 +344,7 @@ span.navbar-brand {
   align-content: center;
   justify-content: flex-end;
   flex-wrap: wrap;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 footer {
@@ -485,7 +485,7 @@ footer {
 
   .about-header {
     font-size: 45px;
-    padding: 3rem 0rem 0rem 0rem;
+    padding: 1.5rem 0rem 1.5rem 0rem;
   }
 
   .about p {

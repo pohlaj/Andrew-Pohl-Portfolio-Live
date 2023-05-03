@@ -108,7 +108,7 @@ h5 {
     position: absolute;
     width: 300px;
     height: 300px;
-    background: var(--primary-color);
+    background: linear-gradient(223.89deg, #00FFD1 14.89%, #00A3FF 85.7%);
     align-content: space-around;
     flex-wrap: nowrap;
     flex-direction: row;
